@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +14,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EmpowHER"
         tools:targetApi="31">
+        <activity
+            android:name=".LeadershipActivity"
+            android:exported="false"
+            android:label="@string/title_activity_leadership"
+            android:theme="@style/Theme.EmpowHER" />
+
+        <activity
+            android:name=".BusinessActivity"
+            android:exported="false"
+            android:label="@string/title_activity_business"
+            android:theme="@style/Theme.EmpowHER" />
+        <activity
+            android:name=".CareerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_career"
+            android:theme="@style/Theme.EmpowHER" />
+        <activity
+            android:name=".FinancialActivity"
+            android:exported="false"
+            android:label="@string/title_activity_financial"
+            android:theme="@style/Theme.EmpowHER" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

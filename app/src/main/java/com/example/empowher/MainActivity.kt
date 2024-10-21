@@ -7,21 +7,21 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import com.example.empowher.ui.components.home.HomeScreen
 import com.example.empowher.ui.theme.EmpowHERTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            EmpowHERTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background,
-                ) {
-                    BakingScreen()
-                }
-            }
+super.onCreate(savedInstanceState)
+setContent {
+    EmpowHERTheme { // Apply your app's theme
+        Surface( // Wrap with Surface for background and layout
+            modifier = Modifier.fillMaxSize(),
+            color = MaterialTheme.colorScheme.background
+        ) {
+            HomeScreen() // Now your HomeScreen composable is correctly placed
         }
     }
+}
+}
 }
